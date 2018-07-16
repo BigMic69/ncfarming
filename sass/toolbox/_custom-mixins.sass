@@ -1,0 +1,31 @@
+// -------------------->>
+//   CUSTOM MIXINS
+// -------------------->>
+
+=mod__section
+  grid-column: span 9
+  padding: 10vh 3vw
+  @media (min-width: 1024px)
+    display: grid
+    grid-template-columns: repeat(6, 1fr)
+    grid-auto-rows: auto
+    grid-gap: 10px
+
+
+
+
+
+=mod__article
+  +box__full
+  @media (min-width: 700px)
+    +box__three-fourth
+  h2
+    +title__heading--two
+    +clr__combo--custom
+    +margin-bottom__five-vh
+    text-align: center
+  p
+    +font-size__text--media
+    +text__align--media
+    +clr__combo--custom
+    +margin-bottom__five-vh

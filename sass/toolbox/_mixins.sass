@@ -1,0 +1,286 @@
+// @import "compass/reset"
+
+// -------------------->>
+//   BOX CONTAINERS
+// -------------------->>
+=box__full--cush
+  width: 96%
+  height: auto
+  margin: 0 auto
+  padding: 0
+
+=box__full
+  width: 100%
+  height: auto
+  margin: 0 auto
+  padding: 0
+
+=box__three-fourth
+  width: 75%
+  height: auto
+  margin: 0 auto
+  padding: 0
+
+=box__half
+  width: 50%
+  height: auto
+  margin: 0 auto
+  padding: 0
+
+=box__quarter
+  width: 25%
+  height: auto
+  margin: 0 auto
+  padding: 0
+
+=box__fixed--bottom
+  position: fixed
+  bottom: 0
+  width: 100%
+  height: auto
+  margin: 0 auto
+  padding: 20px 0
+
+
+
+
+
+
+// -------------------->>
+//   CSS GRID
+// -------------------->>
+
+=grid--small
+  display: grid
+  grid-template-columns: 1fr
+  grid-auto-rows: auto
+  grid-gap: 10px
+
+=grid__media--lg
+  display: grid
+  grid-template-columns: 1fr
+  grid-auto-rows: auto
+  grid-gap: 20px 10px
+  // margin-bottom: 30px
+  @media (min-width: 600px)
+    grid-template-columns: 1fr 1fr
+  @media (min-width: 900px)
+    grid-template-columns: repeat(4, 1fr)
+
+
+
+
+
+// -------------------->>
+//   FLEXBOX
+// -------------------->>
+
+=column__flex
+  display: flex
+  flex-direction: column
+  margin-bottom: 6vh
+  padding: 10px 5px
+
+
+
+
+
+// -------------------->>
+//   BACKGROUNDS
+// -------------------->>
+
+=bg__media
+  min-height: 30vh
+  @media (min-width: 600px)
+    min-height: 40vh
+
+=bg__img--cover($source)
+  background-image: url($source)
+  background-size: cover
+  background-position: center
+  background-repeat: no-repeat
+  background-attachment: scroll
+
+
+
+
+
+// -------------------->>
+//   MARGINS/PADDINGS
+// -------------------->>
+
+=margin-bottom__five-vh
+  margin-bottom: 5vh
+
+=margin-bottom__ten-vh
+  margin-bottom: 10vh
+
+=padding-bottom__five-vh
+  padding-bottom: 5vh
+
+=padding-bottom__ten-vh
+  padding-bottom: 10vh
+
+=padding__box
+  padding: 5vh 0
+
+
+
+// -------------------->>
+//   HEADINGS
+// -------------------->>
+
+=title__heading--one
+  font-size: 1.8rem
+  font-weight: bold
+  letter-spacing: .1rem
+  @media (min-width: 600px)
+    font-size: 2.5rem
+  @media (min-width: 900px)
+    font-size: 3.3rem
+
+=title__heading--two
+  padding: 5px
+  font-size: 1.4rem
+  font-weight: bold
+  letter-spacing: .08rem
+  @media (min-width: 600px)
+    font-size: 1.8rem
+  @media (min-width: 900px)
+    font-size: 2.6rem
+
+=title__heading--three
+  padding: 8px
+  font-size: 1.4rem
+  font-weight: bold
+  letter-spacing: .1rem
+  @media (min-width: 600px)
+    font-size: 1.5rem
+  @media (min-width: 900px)
+    font-size: 2rem
+
+
+
+// -------------------->>
+//   TEXT
+// -------------------->>
+
+=font__fam--primary
+  font-family: 'Merriweather', Cormorant, Ubuntu
+
+=font-size__text--media
+  padding: 20px 10px
+  font-size: 1rem
+  line-height: 1.6rem
+  @media (min-width: 600px)
+    padding: 20px 30px
+    font-size: 1.2rem
+  @media (min-width: 900px)
+    font-size: 1.4rem
+
+=font-size__list--media
+  padding: 10px 10px 10px 5vw
+  font-size: 1rem
+  @media (min-width: 600px)
+    font-size: 1.2rem
+  @media (min-width: 900px)
+    font-size: 1.4rem
+
+=text__align--media
+  text-align: center
+  @media (min-width: 900px)
+    padding: 10px 20px
+    text-align: left
+
+
+
+
+
+// -------------------->>
+//   COLOR PALLET
+// -------------------->>
+
+=clr__combo--dark-light
+  background: $clr__dark
+  color: $clr__light
+
+=clr__combo--light-dark
+  background: $clr__light
+  color: $clr__dark
+
+=clr__combo--grey
+  background: #8b8b8b
+  color: $clr__dark
+
+=clr__combo--custom
+  background: $clr__light
+  color: $clr__trim
+
+=clr__combo--custom-alt
+  background: $clr__trim
+  color: $clr__light
+
+
+
+
+
+// -------------------->>
+//   BORDERS/SHADOW
+// -------------------->>
+=border__shadow--trim
+  border: .5px solid $clr__trim
+  border-radius: 10px
+  box-shadow: 3px 2px 2px rgba($clr__trim,.4)
+
+=border__shadow--dark
+  border: .5px solid $clr__dark
+  border-radius: 10px
+  box-shadow: 3px 2px 2px rgba($clr__dark,.4)
+
+=border__shadow--light
+  border: .5px solid $clr__light
+  border-radius: 10px
+  box-shadow: 3px 2px 2px rgba($clr__light,.4)
+
+=box__border-shadow--corner-bo-ri
+  border-bottom: 1px solid $clr__dark
+  border-right: 1px solid $clr__dark
+  box-shadow: 3px 2px 2px rgba($clr__dark,.4)
+
+=border-bottom__color--trim
+  border-bottom: 2px solid $clr__trim
+
+=shadow__text--dark
+  text-shadow: .5px .3px $clr__dark
+
+
+
+
+// -------------------->>
+//   TRANSITIONS
+// -------------------->>
+=trans-0
+  transition: all .5s ease-in-out .1s
+
+=trans-1
+  transition: all 1s ease-in-out .1s
+
+=trans-2
+  transition: all 2s ease-in-out .1s
+
+=trans-3
+  transition: all 3s ease-in-out .1s
+
+
+
+
+// -------------------->>
+//   BEM MIXINS
+// -------------------->>
+=element($element)
+  &__#{$element}
+    @content
+
+=modifier($modifier)
+  &--#{$modifier}
+    @content
