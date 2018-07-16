@@ -4,13 +4,87 @@
   box-sizing: border-box
 
 html
+  text-align: center
   font-size: 16px
   letter-spacing: .05rem
+  line-height: 2.8rem
   +shadow__text--dark
+
 
 body
   position: relative
+  display: grid
+  grid-template-columns: 1fr
+  grid-template-rows: auto
+  grid-gap: 10px
+  font-size: 1rem
+  +font__fam--primary
+  +clr__combo--light-dark
+
+.headerWrap
+  position: relative
+  grid-column: span 1
+  height: 30vh
+  +bg__img--cover('../img/farm/farm4.jpg')
+  .content__headerWrap
+    position: absolute
+    top: 6vh
+    left: 20px
+    margin: 0
+    padding: 10px 20px
+    +clr__combo--custom-alt
+    +border__shadow--dark
+    h1
+      margin: 0
+      padding: 0
+  @media (min-width: 1024px)
+    height: 50vh
+
+section
+  grid-column: span 1
+  display: grid
+  grid-template-columns: 1fr
+  grid-template-rows: auto
+  grid-gap: 10px
+  padding: 12vh 0 5vh
+  +border-bottom__color--trim
+  // min-height: 80vh
+  @media (min-width: 800px)
+  @media (min-width: 1024px)
+    grid-template-columns: repeat(9, 1fr)
+    padding: 20vh 0 5vh
+
+
+.textContent__wrap
+  grid-column: span 1
+  +clr__combo--custom-alt
+  +border__shadow--dark
+  @media (min-width: 800px)
+    grid-column: 2/6
+  // @media (min-width: 1024px)
+
+.imgWrap
+  grid-column: span 1
+  +box__three-fourth
+  padding: 3vh 0
+  text-align: center
+  +border__shadow--dark
+  +clr__combo--custom-alt
+  @media (min-width: 800px)
+    grid-column: 6/span 3
+
+img
   +box__full
-  // background: #3967bb
-  padding-bottom: 20vh
-  +clr__combo--dark-light
+
+h1
+  +title__heading--one
+  text-align: center
+
+h2
+  text-align: center
+  +title__heading--two
+
+p
+  +clr__combo--custom
+  +font-size__text--media
+  text-align: center

@@ -4,7 +4,7 @@ Webpage: MCCGraphics.info
 ==================== */
 
 @import "compass";
-@import "compass/reset";
+// @import "compass/reset";
 
 // @import url('https://fonts.googleapis.com/css?family=Droid+Serif|Playfair+Display|Ubuntu');
 
@@ -13,7 +13,7 @@ Webpage: MCCGraphics.info
 @import "toolbox/fonts";
 @import "toolbox/custom-mixins";
 @import "partials/base";
-// @import "partials/nav";
-// @import "partials/header";
+@import "partials/nav";
+@import "partials/secOne";
 // @import "partials/sectionOne";
 // @import "partials/sectionTwo";
